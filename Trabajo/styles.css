@@ -1,0 +1,263 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para la barra de navegación */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links li {
+    margin-right: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #00BCE3; /* Color de fondo azul del botón */
+    color: white; /* Texto blanco */
+    border: 2px solid;
+    border-color: black;
+    box-shadow: 3px 3px 0px black;
+    padding: 10px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    font-size: 1rem; /* Tamaño de fuente igual al de los enlaces */
+    font-weight: bold; 
+}
+
+.btn:hover {
+    background-color: #17A2B8;
+}
+
+.container-left {
+    width: 65%;
+    margin-right: 20dvh;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+    align-items: top;
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 50dvh;
+    outline: 5px solid #DADADA
+
+}
+
+.profile-header {
+    height: 70px;
+    background-color: #17A2B8;
+
+}
+
+.profile-avatar {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.profile-info h2 {
+    font-size: 1.4rem;
+    margin-top: -10px;  /* Reduce el margen superior para acercar el h2 al avatar */
+    margin-bottom: 8px;  /* Ajusta el espacio entre el h2 y el siguiente elemento */
+}
+
+.profile-info .location {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-info .location .icon {
+    width: 12px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.profile-info .description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.edit-profile {
+    color: #007bff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.edit-profile .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+/* Sección de conexiones */
+.connections-section {
+    width: 35%;
+}
+
+.connection-requests {
+    background-color: #fff;
+    margin-bottom: 5dvh;
+    padding: 20px;
+}
+
+.connection-requests span, .your-connections span {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.connection-requests ul, .your-connections ul {
+    list-style: none;
+    padding: 0;
+}
+
+.connection-requests li, .your-connections li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.connection-requests li img, .your-connections li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.request-icons {
+    margin-left: auto;
+}
+
+.request-icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.yct-father {
+    background-color: #000000;
+    outline: 5px #DADADA;
+}
+
+.your-connections a {
+    display: block;
+    text-align: left;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.your-connections {
+    background-color: #fff;
+    margin-bottom: 5dvh;
+    padding: 20px;
+}
+
+.your-conecntiones h3 .your-conecntiones{
+    color: white;
+    margin: 10px;
+    padding: 20;
+}
+
+/* Sección de educación */
+.education-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-container h3 {
+    font-size: 1.4rem;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin-top: 5dvh;
+}
+
+.education-entry {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.education-entry h4 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #333;
+}
+
+.edu-father {
+    outline: 5px solid #DADADA
+}
+.education-entry p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Última entrada sin borde inferior */
+.education-entry:last-child {
+    border-bottom: none;
+    outline: ;
+}
+
